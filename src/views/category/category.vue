@@ -1,16 +1,13 @@
-
-
 <template>
   <div>
+    <p>菜单</p>
     <!--  Hello Vue Ri -->
-
-    <h1>首页</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name:'home',
+  name: "category",
   data() {
     return {};
   },

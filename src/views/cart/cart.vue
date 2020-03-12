@@ -1,16 +1,12 @@
-
-
 <template>
   <div>
     <!--  Hello Vue Ri -->
-
-    <h1>首页</h1>
+    <p>购物车</p>
   </div>
 </template>
 
 <script>
 export default {
-  name:'home',
   data() {
     return {};
   },
@@ -19,7 +15,7 @@ export default {
 
   computed: {},
 
-  //   mounted: {},
+//   mounted: {},
 
   methods: {}
 };

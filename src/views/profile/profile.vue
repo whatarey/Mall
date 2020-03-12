@@ -1,28 +1,34 @@
-
-
 <template>
   <div>
-    <!--  Hello Vue Ri -->
 
-    <h1>首页</h1>
-  </div>
+<!--  Hello Vue Ri -->
+ <p>
+     我的
+ </p>
+
+
+
+
+</div>
 </template>
 
 <script>
 export default {
-  name:'home',
-  data() {
-    return {};
+    name:'profile',
+  data () {
+    return {
+    };
   },
 
   components: {},
 
   computed: {},
 
-  //   mounted: {},
+//   mounted: {},
 
   methods: {}
-};
+}
+
 </script>
 <style>
 </style>
