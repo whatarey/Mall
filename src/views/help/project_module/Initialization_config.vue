@@ -82,14 +82,15 @@
     <div>
       <h3>Tabbar 路径错误:</h3>
       <p>请修改 TabBar 的 导入 路径,因为我们 加了 一个 common</p>
-      <div class="errorimg">
-        <img src="@/assets/img/error1.png" />
-      </div>
+      
+        <div class="container">
+            <img class=".img-fluid"  src="@/assets/img/error1.png" alt srcset />
+          </div>
 
       <h3>css 导入错误:</h3>
       <p>直接在 App.vue style 引入 @import './assets/css/base.css'</p>
-      <div class="errorimg">
-        <img src="@/assets/img/error2.png" />
+        <div class="container">
+        <img class=".img-fluid" src="@/assets/img/error2.png" />
       </div>
     </div> 
     

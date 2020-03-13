@@ -8,8 +8,9 @@ const Help = () => import('views/help/help');
 const Cart = () => import('views/cart/cart');
 const Category = () => import('views/category/category');
 const Profile = () => import('views/profile/profile');
-const Initialization_config = () => import('views/help/project_module/Initialization_config')
-const Navbar_config = () => import('views/help/project_module/navbar')
+const Initialization_config = () => import('views/help/project_module/Initialization_config');
+const Navbar_config = () => import('views/help/project_module/navbar');
+const Request_config=()=>import('views/help/project_module/request_page');
 
 /*  use */
 Vue.use(VueRouter)
@@ -50,6 +51,10 @@ const routes = [
         },
         children: [
             {
+                path:'',
+                redirect:'config'
+            },
+            {
                 path: "config",
                 component: Initialization_config,
                 meta: {
@@ -62,6 +67,13 @@ const routes = [
               , meta: {
                 title: "navbar"
               }
+            },
+            {
+                path:'request',
+                component:Request_config,
+                meta:{
+                    title:"网络请求封装"
+                }
             }
         ]
     }

@@ -9,7 +9,8 @@ module.exports = {
                 'assetssrc': '@/assets',
                 'common': '@/common',
                 'components': '@/components',
-                'views': '@/views'
+                'views': '@/views',
+                'network':'@/network'
             }
         }
     }
