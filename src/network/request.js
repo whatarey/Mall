@@ -22,6 +22,7 @@ export default function axios(option) {
 			// console.log('来到了request拦截failure中');
 			return err
 		})
+
 		instance.interceptors.response.use(response => {
 			// console.log('来到了response拦截success中');
 			return response.data
@@ -37,8 +38,7 @@ export default function axios(option) {
 						err.message = '未授权的访问'
 						break
 				}
-			}  
-			
+			}
 			return err
 		})
 
