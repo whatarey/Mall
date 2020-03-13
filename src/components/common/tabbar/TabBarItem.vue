@@ -37,12 +37,12 @@ export default {
   computed: {
     isactivate() {
       console.log("------");
-      console.log(this.$route.path == this.path);
+      // console.log(this.$route.path == this.path);
 
       console.log("", this.path);
       console.log("", this.$route.path);
       console.log("-------");
-      return this.$route.path == this.path; // this.$route.path.indexOf(this.path) !== -1;
+      return this.$route.path.indexOf(this.path)!==-1; // this.$route.path.indexOf(this.path) !== -1;
     }
   },
 

@@ -1,0 +1,15 @@
+.tips {
+    color: red;
+    font-weight: normal;
+  }
+  .errorimg {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .errorimg > img {
+    width: 100%;
+  }
+  .help {
+    padding: 5px 10px;
+    overflow: hidden;
+  }

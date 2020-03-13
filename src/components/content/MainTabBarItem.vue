@@ -2,7 +2,7 @@
   <div class="Tabber">
     <tab-bar>
       <!----组件  使用slot 插槽占用空间 -->
-      <tab-bat-item path="/home" addClassactive="#4240da">
+      <tab-bat-item path="/home" addClassactive="red">
         <!----再来子组件  插入 slot 插槽占用的空间 然后又套用了两个slot 来占用空间  https://www.bilibili.com/video/av89760569?p=120 -->
         <img slot="tabbaritem-icon" src="@/assets/img/home.svg" />
         <img slot="tabbaritem-icon-active" src="@/assets/img/home_active.svg" />

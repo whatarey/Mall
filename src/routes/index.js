@@ -5,19 +5,68 @@ import VueRouter from 'vue-router'
 
 const Home = () => import('views/home/home');
 const Help = () => import('views/help/help');
+const Cart = () => import('views/cart/cart');
+const Category = () => import('views/category/category');
+const Profile = () => import('views/profile/profile');
+const Initialization_config = () => import('views/help/project_module/Initialization_config')
+const Navbar_config = () => import('views/help/project_module/navbar')
 
+/*  use */
 Vue.use(VueRouter)
 const routes = [
     {
         path: '/home',
-        component: Home
-    }, 
+        component: Home,
+        meta: {
+            title: '首页'
+        }
+    },
+    {
+        path: '/cart',
+        component: Cart,
+        meta: {
+            title: '购物车'
+        }
+    },
+    {
+        path: '/category',
+        component: Category,
+        meta: {
+            title: '分类'
+        }
+    },
+    {
+        path: '/profile',
+        component: Profile,
+        meta: {
+            title: '我的'
+        }
+    },
     {
         path: '/help',
-        component: Help
+        component: Help,
+        meta: {
+            title: '帮助页面'
+        },
+        children: [
+            {
+                path: "config",
+                component: Initialization_config,
+                meta: {
+                    title: "帮助页面--项目初始化有关配置"
+                }
+            },
+            {
+              path: "navbar",
+              component: Navbar_config
+              , meta: {
+                title: "navbar"
+              }
+            }
+        ]
     }
 ]
-
+/*  创建 */
 const router = new VueRouter({
     routes,
     mode: 'history'
