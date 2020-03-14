@@ -1,10 +1,9 @@
 
 
-import { request } from './request';
+// import { request } from './request';
 
-export function getHomedata(){
+import { request, request2 } from './Axions';
 
-    return request({
-           url:'/home/multidata'
-    })
+export function getHomedata() { 
+ return request({url:"/home/multidata"}); 
 }

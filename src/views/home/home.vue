@@ -23,10 +23,10 @@ export default {
     NavBar
   },
   created() {
-    getHomedata().then(res => {
-      console.log(res);
+    getHomedata().then(data => {
+      console.log("Home 页面数据请求", data.data);
     });
-  }, 
+  },
   computed: {},
   methods: {}
 };
