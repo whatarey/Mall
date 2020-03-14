@@ -41,9 +41,6 @@ export default {
     TabBar,
     TabBatItem
   },
-
-  // computed: {},
-
   methods: {}
 };
 </script>

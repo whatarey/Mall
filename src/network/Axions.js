@@ -33,7 +33,7 @@ export function request(config) {
 
         console.log(" axios  响应成功拦截",result);
         //这里 对所需要的数据进行返回
-        return result;
+        return result.data.data;
     },errlesult=>{
         console.log(" axios 响应失败拦截",errlesult);
         // 比如  返回 401 无权限, 404 页面找不到, 500 服务器错误 就在这里
