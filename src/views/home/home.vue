@@ -2,17 +2,28 @@
 
 <template>
   <div class="home">
+    <!--   头部导航  -->
     <nav-bar class="home_navbar">
       <div class="home_navbar_content" slot="content">首页精选</div>
     </nav-bar>
+    <!--   头部导航  -->
+    <!--   轮播图  -->
     <home-swiper :banners="banner"></home-swiper>
+    <!--   轮播图  -->
+    <!--   推荐  -->
+    <home-recommend :recommend="recommends"></home-recommend>
+    <!--   推荐  -->
   </div>
 </template>
 
 <script>
+/* 组件*/
 import NavBar from "components/common/navbar/NavBar";
-import { getHomedata } from "network/home";
 import homeSwiper from "views/home/childComps/homeSwiper";
+import HomeRecommend from "views/home/childComps/homeRecommends";
+
+/* 请求 */
+import { getHomedata } from "network/home";
 
 export default {
   name: "home",
@@ -25,7 +36,8 @@ export default {
 
   components: {
     NavBar,
-    homeSwiper
+    homeSwiper,
+    HomeRecommend
   },
   created() {
     getHomedata().then(data => {

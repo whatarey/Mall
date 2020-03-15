@@ -16,6 +16,10 @@ const Request_config=()=>import('views/help/project_module/request_page');
 Vue.use(VueRouter)
 const routes = [
     {
+        path:'',
+        redirect:'home'
+    },
+    {
         path: '/home',
         component: Home,
         meta: {
